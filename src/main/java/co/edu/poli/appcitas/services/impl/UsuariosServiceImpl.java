@@ -19,7 +19,7 @@ public class UsuariosServiceImpl implements IUsuariosService {
 
 	@Override
 	public List<UsuariosDTO> consultarUsuarios() {
-		List<Usuario> lstUsuarios = new ArrayList<Usuario>();
+		List<Usuario> lstUsuarios = (List<Usuario>) usuariosRepo.findAll();
 		List<UsuariosDTO> lstUsuariosDTO = new ArrayList<UsuariosDTO>();
 		UsuariosDTO usuario;
 		
