@@ -1,5 +1,6 @@
 package co.edu.poli.appcitas.dto;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class UsuariosDTO {
@@ -7,7 +8,7 @@ public class UsuariosDTO {
 	private String tipoIdentificacion;
 	private String nombres;
 	private String apellidos;	
-	private Date fechaNacimiento;
+	private LocalDate fechaNacimiento;
 	private String sexo;
 	private Long celular;
 	private String correo;
@@ -49,11 +50,11 @@ public class UsuariosDTO {
 		this.apellidos = apellidos;
 	}
 
-	public Date getFechaNacimiento() {
+	public LocalDate getFechaNacimiento() {
 		return fechaNacimiento;
 	}
 
-	public void setFechaNacimiento(Date fechaNacimiento) {
+	public void setFechaNacimiento(LocalDate fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
 	}
 

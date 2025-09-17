@@ -53,8 +53,8 @@ public class UsuariosServiceImpl implements IUsuariosService {
 		u.setCelular(usuario.getCelular());
 		u.setCorreo(usuario.getCorreo());
 		u.setContrasena(usuario.getContrasena());
-		u.setEstado(usuario.getEstado());
-		u.setTipoUsuario(usuario.getTipoUsuario());
+		u.setEstado("A");
+		u.setTipoUsuario("P");
 		usuariosRepo.save(u);
 		return usuario;
 	}

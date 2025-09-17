@@ -1,5 +1,6 @@
 package co.edu.poli.appcitas.entities;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import jakarta.persistence.Column;
@@ -18,7 +19,7 @@ public class Usuario {
 	private String nombres;
 	private String apellidos;
 	@Column(name="fecha_nacimiento")
-	private Date fechaNacimiento;
+	private LocalDate fechaNacimiento;
 	private String sexo;
 	private Long celular;
 	private String correo;
@@ -53,10 +54,10 @@ public class Usuario {
 	public void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
 	}
-	public Date getFechaNacimiento() {
+	public LocalDate getFechaNacimiento() {
 		return fechaNacimiento;
 	}
-	public void setFechaNacimiento(Date fechaNacimiento) {
+	public void setFechaNacimiento(LocalDate fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
 	}
 	public String getSexo() {
